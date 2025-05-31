@@ -32,3 +32,42 @@ circulo1 = Circulo(10)
 area_circulo1 = circulo1.calcular_area()
 print(f"A área do círculo é: {area_circulo1}")
     
+# Exercicio 3 - Lambda
+
+dobrar = lambda x: x * 2
+
+print(dobrar(7))
+
+# Exercicio 4
+
+eh_par = lambda n: n % 2 == 0
+
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+resultados_paridade = list(map(eh_par, numeros))
+
+print(f"Lista original: {numeros}")
+print(f"Cada número é par? (True/False): {resultados_paridade}")
+
+# Exercicio 5
+
+lista = [1,2,5,6,7,10]
+
+lista_nova = [ item * item for item in lista ]
+
+print(lista_nova)
+
+# Exercicio 6
+
+palavras = ["oi", "Python", "sim", "não", "dados"]
+
+lista = [item for item in palavras if len(item) > 3]
+
+print(lista)
+
+# Exercicios 7
+
+pares = [item for item in range(11) if item % 2 ==0]
+
+print(pares)
